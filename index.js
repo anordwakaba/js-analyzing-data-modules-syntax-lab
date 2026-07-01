@@ -1,6 +1,7 @@
 // Load the datejs package
 require("datejs");
 
+
 // Function to combine multiple arrays of usernames
 function combineUsers(...args) {
 
@@ -8,7 +9,6 @@ function combineUsers(...args) {
     const combinedObject = {
         users: []
     };
-
     // Go through each array of usernames
     for (const usernames of args) {
 
@@ -17,6 +17,7 @@ function combineUsers(...args) {
             ...combinedObject.users,
             ...usernames
         ];
+
     }
 
     // Save today's date
